@@ -63,3 +63,12 @@ func printAdjMatrix(matrix *[][]int) {
 		fmt.Println()
 	}
 }
+func numberOfVertices(adjListArray *[]list.List) int {
+	counter := 0
+	for _, v := range *adjListArray {
+		for t := v.Front(); t != nil; t = t.Next() {
+			counter++
+		}
+	}
+	return counter
+}
