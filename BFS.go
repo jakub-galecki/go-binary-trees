@@ -6,7 +6,7 @@ import (
 )
 
 // Prints Breadth First Search from given vertices
-func bfs(adjList *[]list.List, s int) {
+func BFS(adjList *[]list.List, s int) {
 	Q := list.New()
 	size := numberOfVertices(adjList)
 	visited := make([]bool, size)
