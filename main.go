@@ -28,5 +28,5 @@ func main() {
 	//printAdjMatrix(&adjMatrix)
 	//adjList2 := adjMatrixToAdjList(&adjMatrix)
 	//printAdjList(&adjList2)
-	bfs(&adjList, 2)
+	DFS(&adjList)
 }
